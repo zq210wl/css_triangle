@@ -1,0 +1,67 @@
+/* 边框叠加效果：*/
+.triangle-all{
+  width: 0;
+  height: 0;
+  border-width: 30px;
+  border-style: solid;
+  border-color: #c03 #fc0 #69c #6c6;/* 红 黄 蓝 绿 */
+}
+/* 箭头朝下的三角形效果： */
+.triangle-down{
+  width: 0;
+  height: 0;
+  border-width: 30px 30px 0;
+  border-style: solid;
+  border-color: #c03 transparent  transparent;/* 红 透明 透明*/
+}
+/* 箭头朝上的三角形效果： */
+.triangle-up{
+  width: 0;
+  height: 0;
+  border-width: 0 30px 30px;
+  border-style: solid;
+  border-color: transparent transparent #69c;
+}
+/* 箭头朝左的三角形效果： */
+.triangle-left{
+  width: 0;
+  height: 0;
+  border-width: 30px 30px 30px 0;
+  border-style: solid;
+  border-color: transparent #fc0 transparent transparent;
+}
+/* 箭头朝右的三角形效果： */
+.triangle-right{
+  width: 0;
+  height: 0;
+  border-width: 30px 0 30px 30px;
+  border-style: solid;
+  border-color: transparent transparent transparent #6c6;
+}
+/* 不规则三角形效果： */
+.triangle-scalene{
+  width: 0;
+  height: 0;
+  border-width: 0 0 60px 20px;/* 设置对角和相邻的border都为0来实现不规则效果 */
+  border-style: solid;
+  border-color: transparent transparent #69c;
+}
+/* Tip效果： */
+.triangle-tip-up{
+  width: 200px;
+  height: 30px;
+  background:#3FB58E;
+  border-radius: 4px;
+  position: relative;
+}
+.triangle-tip-up:before{
+  content:'';
+  width: 0;
+  height: 0;
+  border-width: 0 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #3FB58E;
+  position: absolute;
+  left: 80px;
+  top: -10px;
+}
